@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rust Blueprint Tracker</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/js.js"></script>
+
+	<!-- Angular -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+	
+	<script type="text/javascript" src="js/controllers.js"></script>
+</head>
+<body>
+
+	<button id="reset">RESET</button>
+
+	<header>
+		<h1>Rust Blueprint Tracker</h1>
+		<p class="text">How it works: Click on the items you know how to craft.</p>
+	</header>
+
+	<div id="blueprint-wrapper" ng-app="bptrackerApp" ng-controller="bptrackerCtrl">
+
+		<div class="lists" id="fragments">
+			<div class="section-title">
+				<img class="fragimg" src="images/Blueprint_Fragment_icon.png" />
+				<h2>Blueprint Fragments</h2>
+				<br />
+				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x 20</p>
+			</div>
+			<ul>
+				<li class="list-item" ng-repeat="bp in frags">
+					<input class="checkb" type="checkbox" id="bf{{$index}}" />
+					<label class="checklabel" for="bf{{$index}}">
+						<img ng-src="images/frag/{{bp.img}}" />
+						<span>{{bp.name}}</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+
+		<div class="lists" id="page">
+			<div class="section-title">
+				<img class="fragimg" src="images/Blueprint_Page_icon.png" />
+				<h2>Blueprint Page</h2>
+				<br />
+				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x 60</p>
+			</div>
+			<ul>
+				<li class="list-item" ng-repeat="bp in pages">
+					<input class="checkb" type="checkbox" id="bp{{$index}}" />
+					<label class="checklabel" for="bp{{$index}}">
+						<img ng-src="images/page/{{bp.img}}" />
+						<span>{{bp.name}}</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+
+		<div class="lists" id="book">
+			<div class="section-title">
+				<img class="fragimg" src="images/Blueprint_Book_icon.png" />
+				<h2>Blueprint Book</h2>
+				<br />
+				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" />
+				<p  class="text">x 300</p>
+			</div>
+			<ul>
+				<li class="list-item" ng-repeat="bp in books">
+					<input class="checkb" type="checkbox" id="bb{{$index}}" />
+					<label class="checklabel" for="bb{{$index}}">
+						<img ng-src="images/book/{{bp.img}}" />
+						<span>{{bp.name}}</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+
+		<div class="lists" id="library">
+			<div class="section-title">
+				<img class="fragimg" src="images/Blueprint_Library_icon.png" />
+				<h2>Blueprint Library</h2>
+				<br />
+				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" />
+				<p  class="text">x 1200</p>
+			</div>
+			<ul>
+				<li class="list-item" ng-repeat="bp in libs">
+					<input class="checkb" type="checkbox" id="bl{{$index}}" />
+					<label class="checklabel" for="bl{{$index}}">
+						<img ng-src="images/library/{{bp.img}}" />
+						<span>{{bp.name}}</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+</body>
+
+
+</html>

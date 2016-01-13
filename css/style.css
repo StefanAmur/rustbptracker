@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Rust-Regular';
+    src:url('../font/Rust-Regular.ttf.woff') format('woff'),
+        url('../font/Rust-Regular.ttf.svg#Rust-Regular') format('svg'),
+        url('../font/Rust-Regular.ttf.eot'),
+        url('../font/Rust-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+	background-color: #2A2D2D;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	text-align: center;
+	color: #CC4333;
+}
+
+header h1 {
+	font-family: Rust-Regular;
+	font-size: 40px;
+}
+
+#reset {
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	width: 80px;
+	height: 30px;
+	color: #CC4333;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+#reset:hover {
+	background-color: #e8e8e8;
+}
+
+.text {
+	color: #CC4333;
+	font-weight: bold;
+}
+
+.section-title {
+	text-align: center;
+}
+
+.section-title h2 {
+	font-family: Rust-Regular;
+	font-size: 30px;
+	color: #CC4333;
+}
+
+.section-title * {
+	display: inline;
+}
+
+.fragimg {
+	position: relative;
+	top: 25px;
+}
+
+.fragthb {
+	position: relative;
+	width: 60px;
+	top: 25px;
+	margin-top: -25px;
+}
+
+.list-item {
+	display: inline-block;
+	width:  120px;
+	margin: 0 10px 20px;
+	text-align: center;
+}
+
+.list-item * {
+	display: block;
+	margin: 0 auto;
+}
+
+.checklabel {
+	text-transform: ;
+	background-color: #404444;
+	width: 150px;
+	height: 220px;
+	border-radius: 10px;
+	border: 3px solid black;
+	padding: 20px 10px;
+	display: table-cell;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.checklabel span {
+	margin-top: 10px;
+}
+
+.list-item input[type=checkbox] {
+	display: none;
+}
+
+.checklabel:hover {
+	background-color: #6a7070;
+}
+
+.list-item input[type=checkbox]:checked + .checklabel {
+	background-color: #18753c;
+}
