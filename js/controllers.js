@@ -17,7 +17,7 @@ bpapp.controller('bptrackerCtrl', function ($scope){
 		{	'name': 'Medical Syringe',
 			'img': 'Medical_Syringe_icon.png'
 		},
-		{	'name': 'Motal Horizontal Embrasure',
+		{	'name': 'Metal Horizontal Embrasure',
 			'img': 'Metal_horizontal_embrasure_icon.png'
 		},
 		{	'name': 'Metal Vertical Embrasure',
@@ -50,6 +50,9 @@ bpapp.controller('bptrackerCtrl', function ($scope){
 		},
 		{	'name': 'Wooden Floor Spikes',
 			'img': 'Wooden_Floor_Spikes_icon.png'
+		},
+		{	'name': 'Single Sign Post',
+			'img': 'Signle_Sign_Post_icon.png'
 		}
 	];
 	$scope.pages = [
@@ -173,10 +176,10 @@ bpapp.controller('bptrackerCtrl', function ($scope){
 			'name': 'Snap Trap',
 			'img': 'Snap_Trap_icon.png'
 		},
-		{
-			'name': 'Snow Jacket - Black',
-			'img': 'Snow_Jacket_-_Black_icon.png'
-		},
+		// {
+		// 	'name': 'Snow Jacket - Black',
+		// 	'img': 'Snow_Jacket_-_Black_icon.png'
+		// },
 		{
 			'name': 'Survey Charge',
 			'img': 'Survey_Charge_icon.png'
@@ -223,6 +226,16 @@ bpapp.controller('bptrackerCtrl', function ($scope){
 		{
 			'name': 'Large Water Catcher',
 			'img': 'Large_Water_Catcher_icon.png'
+		},
+		{
+			'name': 'Jacket',
+			'img': 'Jacket_icon.png'
+		},
+		{	'name': 'Wooden Sign',
+			'img': 'Wooden_Sign_icon.png'
+		},
+		{	'name': 'Two Sided Hanging Sign',
+			'img': 'Two_Sided_Hanging_Sign_icon.png'
 		}
 	];
 	$scope.books = [
@@ -354,6 +367,10 @@ bpapp.controller('bptrackerCtrl', function ($scope){
 			'name': 'XXL Picture Frame',
 			'img': 'XXL_Picture_Frame_icon.png'
 		},
+		{
+			'name': 'Semi-Automatic Rifle',
+			'img': 'Semi-Automatic_Rifle_icon.png'
+		}
 
 
 	];
@@ -405,6 +422,19 @@ bpapp.controller('bptrackerCtrl', function ($scope){
 		{
 			'name': 'Timed Explosive Charge',
 			'img': 'Timed_Explosive_Charge_icon.png'
+		},
+		{
+			'name': '4x Zoom Scope',
+			'img': '4x_Zoom_Scope_icon.png'
+		},
+		{
+			'name': 'Lasersight',
+			'img': 'Weapon_Lasersight_icon.png'
+		},
+		{
+			'name': 'Flashlight',
+			'img': 'Weapon_Flashlight_icon.png'
 		}
+
 	];
 })

@@ -20,6 +20,13 @@
 <body>
 
 	<button id="reset">RESET</button>
+	<form style="position:fixed;top:50px;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="FC33F2G5SGD5U">
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+
 
 	<header>
 		<h1>Rust Blueprint Tracker</h1>
@@ -36,7 +43,7 @@
 				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x 20</p>
 			</div>
 			<ul>
-				<li class="list-item" ng-repeat="bp in frags">
+				<li class="list-item" ng-repeat="bp in frags | orderBy:'name'">
 					<input class="checkb" type="checkbox" id="bf{{$index}}" />
 					<label class="checklabel" for="bf{{$index}}">
 						<img ng-src="images/frag/{{bp.img}}" />
@@ -54,7 +61,7 @@
 				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x 60</p>
 			</div>
 			<ul>
-				<li class="list-item" ng-repeat="bp in pages">
+				<li class="list-item" ng-repeat="bp in pages | orderBy:'name'">
 					<input class="checkb" type="checkbox" id="bp{{$index}}" />
 					<label class="checklabel" for="bp{{$index}}">
 						<img ng-src="images/page/{{bp.img}}" />
@@ -73,7 +80,7 @@
 				<p  class="text">x 300</p>
 			</div>
 			<ul>
-				<li class="list-item" ng-repeat="bp in books">
+				<li class="list-item" ng-repeat="bp in books | orderBy:'name'">
 					<input class="checkb" type="checkbox" id="bb{{$index}}" />
 					<label class="checklabel" for="bb{{$index}}">
 						<img ng-src="images/book/{{bp.img}}" />
@@ -92,7 +99,7 @@
 				<p  class="text">x 1200</p>
 			</div>
 			<ul>
-				<li class="list-item" ng-repeat="bp in libs">
+				<li class="list-item" ng-repeat="bp in libs | orderBy:'name'">
 					<input class="checkb" type="checkbox" id="bl{{$index}}" />
 					<label class="checklabel" for="bl{{$index}}">
 						<img ng-src="images/library/{{bp.img}}" />
@@ -106,5 +113,15 @@
 
 </body>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75302252-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </html>
