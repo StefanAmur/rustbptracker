@@ -4,7 +4,7 @@ A website used for tracking known blueprints in the videogame Rust. It uses loca
 
 ## Motivation
 
-Myself, being a player of the game Rust, wanted a way to keep tabs on which items I knew how to craft, and which items I had left to find out in the wasteland.
+I, being a player of the game Rust, wanted a way to keep tabs on which items I knew how to craft, and which items I had left to find out in the wasteland.
 
 ## Contributors
 
