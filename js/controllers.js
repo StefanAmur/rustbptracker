@@ -52,7 +52,7 @@ bpapp.controller('bptrackerCtrl', function ($scope){
 			'img': 'Wooden_Floor_Spikes_icon.png'
 		},
 		{	'name': 'Single Sign Post',
-			'img': 'Signle_Sign_Post_icon.png'
+			'img': 'Single_Sign_Post_icon.png'
 		}
 	];
 	$scope.pages = [
@@ -236,6 +236,10 @@ bpapp.controller('bptrackerCtrl', function ($scope){
 		},
 		{	'name': 'Two Sided Hanging Sign',
 			'img': 'Two_Sided_Hanging_Sign_icon.png'
+		},
+		{
+			'name': 'Ceiling Light',
+			'img': 'Ceiling_Light_icon.png'
 		}
 	];
 	$scope.books = [
@@ -370,8 +374,11 @@ bpapp.controller('bptrackerCtrl', function ($scope){
 		{
 			'name': 'Semi-Automatic Rifle',
 			'img': 'Semi-Automatic_Rifle_icon.png'
+		},
+		{
+			'name': 'Flame Thrower',
+			'img': 'Flame_Thrower_icon.png'
 		}
-
 
 	];
 	$scope.libs = [
