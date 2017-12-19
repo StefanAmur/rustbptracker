@@ -8,16 +8,18 @@ def read_rust_item_file(filepath):
 		lines.append(line)
 
 	attributes = get_attributes_from_file_lines(lines)
+	attributes_dict = None
+	if attributes:
+		attributes_string = ''.join(attributes)
 
-	attributes_string = ''.join(attributes)
+		attributes_string = remove_trailing_comma_from_string(attributes_string)
 
-	attributes_string = remove_trailing_comma_from_string(attributes_string)
+		attributes_dict_string = '{%s}' % attributes_string
 
-	attributes_dict_string = '{%s}' % attributes_string
+		attributes_dict = json.loads(attributes_dict_string)
 
-	attributes_dict = json.loads(attributes_dict_string)
-
-	print(attributes_dict)
+	return attributes_dict
+	# print(attributes_dict)
 
 def get_display_name_from_file_lines(lines):
 	reading_lines = False
@@ -42,7 +44,10 @@ def get_attributes_from_file_lines(lines):
 	default_blueprint = get_default_blueprint_from_file_lines(lines)
 	workbench_level = get_workbench_level_from_file_lines(lines)
 
-	attributes = [display_name, default_blueprint, workbench_level]
+	attributes = None
+
+	if display_name and default_blueprint and workbench_level:
+		attributes = [display_name, default_blueprint, workbench_level]
 
 	return attributes
 
