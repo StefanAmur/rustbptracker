@@ -1,0 +1,119 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": 97409,
+    "shortname": "bed",
+    "displayName": {
+        "token": "bed",
+        "english": "Bed"
+    },
+    "displayDescription": {
+        "token": "bed.desc",
+        "english": "A Bed. Placing this will give you a place to respawn and can be used much more frequently than a sleeping bag. Note: Must be placed inside a building."
+    },
+    "iconSprite": {
+        "instanceID": 82664
+    },
+    "category": 2,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 1,
+    "quickDespawn": false,
+    "rarity": 2,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 153950
+    },
+    "inventoryGrabSound": {
+        "instanceID": 153950
+    },
+    "inventoryDropSound": {
+        "instanceID": 96032
+    },
+    "physImpactSoundDef": {
+        "instanceID": 33290
+    },
+    "condition": {
+        "enabled": false,
+        "max": 0.0,
+        "repairable": false,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": ""
+    },
+    "Traits": 8,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemModDeployable
+{
+    "entityPrefab": {
+        "guid": "f5b206b6dd5f86d46a5b683e2de96c10"
+    },
+    "showCrosshair": false,
+    "UnlockAchievement": ""
+}
+
+ItemBlueprint
+{
+    "ingredients": [
+        {
+            "itemDef": {
+                "instanceID": 244042
+            },
+            "amount": 60.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 239876
+            },
+            "amount": 100.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 288352
+            },
+            "amount": 2.0
+        }
+    ],
+    "defaultBlueprint": false,
+    "userCraftable": true,
+    "isResearchable": true,
+    "rarity": 2,
+    "workbenchLevelRequired": 1,
+    "scrapRequired": 0,
+    "scrapFromRecycle": 0,
+    "NeedsSteamItem": false,
+    "blueprintStackSize": -1,
+    "time": 60.0,
+    "amountToCreate": 1,
+    "UnlockAchievment": ""
+}
+
+ItemModEntity
+{
+    "entityPrefab": {
+        "guid": "838f80da553c1cc478050be83ef50558"
+    },
+    "defaultBone": ""
+}
+

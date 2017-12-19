@@ -1,0 +1,115 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": 1501403549,
+    "shortname": "wood.armor.helmet",
+    "displayName": {
+        "token": "wood.armor.helmet",
+        "english": "Wood Armor Helmet"
+    },
+    "displayDescription": {
+        "token": "wood.helmet.pants.desc",
+        "english": "A shoddy helmet made from Wood and Cloth."
+    },
+    "iconSprite": {
+        "instanceID": 71162
+    },
+    "category": 4,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 1,
+    "quickDespawn": false,
+    "rarity": 2,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 75596
+    },
+    "inventoryGrabSound": {
+        "instanceID": 75596
+    },
+    "inventoryDropSound": {
+        "instanceID": 56268
+    },
+    "physImpactSoundDef": {
+        "instanceID": 100162
+    },
+    "condition": {
+        "enabled": true,
+        "max": 100.0,
+        "repairable": false,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": "f7a441dbcf87b53458c7c4167b205e59"
+    },
+    "Traits": 8,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemModWearable
+{
+    "entityPrefab": {
+        "guid": "658f42fe4e3d02d4aa6f386f5a735ff4"
+    },
+    "protectionProperties": {
+        "instanceID": 87726
+    },
+    "armorProperties": {
+        "instanceID": 103130
+    },
+    "movementProperties": {
+        "instanceID": 0
+    },
+    "occlusionType": 64,
+    "blocksAiming": false,
+    "emissive": false
+}
+
+ItemBlueprint
+{
+    "ingredients": [
+        {
+            "itemDef": {
+                "instanceID": 244042
+            },
+            "amount": 15.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 287774
+            },
+            "amount": 200.0
+        }
+    ],
+    "defaultBlueprint": true,
+    "userCraftable": true,
+    "isResearchable": true,
+    "rarity": 1,
+    "workbenchLevelRequired": 0,
+    "scrapRequired": 0,
+    "scrapFromRecycle": 0,
+    "NeedsSteamItem": false,
+    "blueprintStackSize": -1,
+    "time": 20.0,
+    "amountToCreate": 1,
+    "UnlockAchievment": ""
+}
+

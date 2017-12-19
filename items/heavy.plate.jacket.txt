@@ -1,0 +1,121 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": 1404466285,
+    "shortname": "heavy.plate.jacket",
+    "displayName": {
+        "token": "heavy.plate.jacket",
+        "english": "Heavy Plate Jacket"
+    },
+    "displayDescription": {
+        "token": "heavy.plate.jacket.desc",
+        "english": "Offers superior protection at the cost of aiming down sights and reduced movement speed."
+    },
+    "iconSprite": {
+        "instanceID": 15608
+    },
+    "category": 4,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 1,
+    "quickDespawn": false,
+    "rarity": 3,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 67392
+    },
+    "inventoryGrabSound": {
+        "instanceID": 67392
+    },
+    "inventoryDropSound": {
+        "instanceID": 33142
+    },
+    "physImpactSoundDef": {
+        "instanceID": 0
+    },
+    "condition": {
+        "enabled": true,
+        "max": 1000.0,
+        "repairable": true,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": "40057d7e1dd403947bbea7458912dd4d"
+    },
+    "Traits": 8,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemModWearable
+{
+    "entityPrefab": {
+        "guid": "13a13a0f120a1a241a11ab46a038ad8d"
+    },
+    "protectionProperties": {
+        "instanceID": 113454
+    },
+    "armorProperties": {
+        "instanceID": 69822
+    },
+    "movementProperties": {
+        "instanceID": 169220
+    },
+    "occlusionType": 64,
+    "blocksAiming": true,
+    "emissive": false
+}
+
+ItemBlueprint
+{
+    "ingredients": [
+        {
+            "itemDef": {
+                "instanceID": 289566
+            },
+            "amount": 3.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 288350
+            },
+            "amount": 8.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 288356
+            },
+            "amount": 3.0
+        }
+    ],
+    "defaultBlueprint": false,
+    "userCraftable": true,
+    "isResearchable": true,
+    "rarity": 0,
+    "workbenchLevelRequired": 2,
+    "scrapRequired": 0,
+    "scrapFromRecycle": 0,
+    "NeedsSteamItem": false,
+    "blueprintStackSize": -1,
+    "time": 60.0,
+    "amountToCreate": 1,
+    "UnlockAchievment": ""
+}
+

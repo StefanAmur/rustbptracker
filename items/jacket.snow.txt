@@ -1,0 +1,115 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": -1616887133,
+    "shortname": "jacket.snow",
+    "displayName": {
+        "token": "jacket.snow",
+        "english": "Snow Jacket - Red"
+    },
+    "displayDescription": {
+        "token": "jacket.snow.desc",
+        "english": "A thick, high visibility Jacket. It will help keep you warm in any climate."
+    },
+    "iconSprite": {
+        "instanceID": 83660
+    },
+    "category": 4,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 1,
+    "quickDespawn": false,
+    "rarity": 1,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 64992
+    },
+    "inventoryGrabSound": {
+        "instanceID": 64992
+    },
+    "inventoryDropSound": {
+        "instanceID": 44698
+    },
+    "physImpactSoundDef": {
+        "instanceID": 33290
+    },
+    "condition": {
+        "enabled": false,
+        "max": 0.0,
+        "repairable": false,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": "8ea0bb1f29686944f80e718ce4b88bff"
+    },
+    "Traits": 8,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemModWearable
+{
+    "entityPrefab": {
+        "guid": "5067fc41560bbf84887ffe649356910c"
+    },
+    "protectionProperties": {
+        "instanceID": 79788
+    },
+    "armorProperties": {
+        "instanceID": 69822
+    },
+    "movementProperties": {
+        "instanceID": 0
+    },
+    "occlusionType": 64,
+    "blocksAiming": false,
+    "emissive": false
+}
+
+ItemBlueprint
+{
+    "ingredients": [
+        {
+            "itemDef": {
+                "instanceID": 244042
+            },
+            "amount": 60.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 288352
+            },
+            "amount": 1.0
+        }
+    ],
+    "defaultBlueprint": false,
+    "userCraftable": true,
+    "isResearchable": true,
+    "rarity": 3,
+    "workbenchLevelRequired": 1,
+    "scrapRequired": 0,
+    "scrapFromRecycle": 0,
+    "NeedsSteamItem": false,
+    "blueprintStackSize": -1,
+    "time": 30.0,
+    "amountToCreate": 1,
+    "UnlockAchievment": ""
+}
+

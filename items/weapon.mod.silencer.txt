@@ -1,0 +1,106 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": 1213686767,
+    "shortname": "weapon.mod.silencer",
+    "displayName": {
+        "token": "weapon.mod.silencer",
+        "english": "Silencer"
+    },
+    "displayDescription": {
+        "token": "weapon.mod.silencer.desc",
+        "english": "Significantly reduces the sound of gunfire, and completely removes any visible muzzle flash."
+    },
+    "iconSprite": {
+        "instanceID": 153176
+    },
+    "category": 0,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 6,
+    "stackable": 1,
+    "quickDespawn": false,
+    "rarity": 2,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 150144
+    },
+    "inventoryGrabSound": {
+        "instanceID": 150144
+    },
+    "inventoryDropSound": {
+        "instanceID": 162942
+    },
+    "physImpactSoundDef": {
+        "instanceID": 115284
+    },
+    "condition": {
+        "enabled": true,
+        "max": 100.0,
+        "repairable": true,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": "b723c36a58915224aa8916f935a53569"
+    },
+    "Traits": 8,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemBlueprint
+{
+    "ingredients": [
+        {
+            "itemDef": {
+                "instanceID": 288350
+            },
+            "amount": 5.0
+        }
+    ],
+    "defaultBlueprint": false,
+    "userCraftable": true,
+    "isResearchable": true,
+    "rarity": 4,
+    "workbenchLevelRequired": 1,
+    "scrapRequired": 0,
+    "scrapFromRecycle": 0,
+    "NeedsSteamItem": false,
+    "blueprintStackSize": -1,
+    "time": 120.0,
+    "amountToCreate": 1,
+    "UnlockAchievment": ""
+}
+
+ItemModEntity
+{
+    "entityPrefab": {
+        "guid": "3ba66eb6e3749f943aa9bb6379ae82d5"
+    },
+    "defaultBone": "barrel"
+}
+
+ItemModSound
+{
+    "effect": {
+        "guid": "6dcdd5002d969fa44bb4ad4516318606"
+    },
+    "actionType": 0
+}
+
