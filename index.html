@@ -14,7 +14,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
 	
-	<script type="text/javascript" src="js/controllers.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
 </head>
 <body>
 
@@ -27,80 +27,59 @@
 
 	<div id="blueprint-wrapper" ng-app="bptrackerApp" ng-controller="bptrackerCtrl">
 
-		<div class="lists" id="fragments">
+		<div class="lists" id="workbench_level_1">
 			<div class="section-title">
 				<img class="fragimg" src="images/Blueprint_Fragment_icon.png" />
-				<h2>Blueprint Fragments</h2>
+				<h2>Workbench Level 1</h2>
 				<br />
-				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x 20</p>
+				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x 75</p>
 			</div>
 			<ul>
-				<li class="list-item" ng-repeat="bp in frags | orderBy:'name'">
-					<input class="checkb" type="checkbox" id="bf{{$index}}" />
-					<label class="checklabel" for="bf{{$index}}">
-						<img ng-src="images/frag/{{bp.img}}" />
-						<span>{{bp.name}}</span>
+				<li class="list-item" ng-repeat="blueprint in workbench_level_1 track by $index">
+					 <input class="checkb" type="checkbox" id="blueprint{{$index}}" />
+					<label class="checklabel" for="blueprint{{$index}}">
+						<img style="max-width: 100%;" ng-src="items/{{blueprint.shortname}}.png" />
+						<span>{{blueprint.displayName.english}}</span>
 					</label>
 				</li>
 			</ul>
 		</div>
 
-		<div class="lists" id="page">
+		<div class="lists" id="workbench_level_2">
 			<div class="section-title">
-				<img class="fragimg" src="images/Blueprint_Page_icon.png" />
-				<h2>Blueprint Page</h2>
+				<img class="fragimg" src="images/Blueprint_Fragment_icon.png" />
+				<h2>Workbench Level 2</h2>
 				<br />
-				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x 60</p>
+				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x ???</p>
 			</div>
 			<ul>
-				<li class="list-item" ng-repeat="bp in pages | orderBy:'name'">
-					<input class="checkb" type="checkbox" id="bp{{$index}}" />
-					<label class="checklabel" for="bp{{$index}}">
-						<img ng-src="images/page/{{bp.img}}" />
-						<span>{{bp.name}}</span>
+				<li class="list-item" ng-repeat="blueprint in workbench_level_2 track by $index">
+					 <input class="checkb" type="checkbox" id="blueprint{{$index}}" />
+					<label class="checklabel" for="blueprint{{$index}}">
+						<img style="max-width: 100%;" ng-src="items/{{blueprint.shortname}}.png" />
+						<span>{{blueprint.displayName.english}}</span>
 					</label>
 				</li>
 			</ul>
 		</div>
 
-		<div class="lists" id="book">
+		<div class="lists" id="workbench_level_3">
 			<div class="section-title">
-				<img class="fragimg" src="images/Blueprint_Book_icon.png" />
-				<h2>Blueprint Book</h2>
+				<img class="fragimg" src="images/Blueprint_Fragment_icon.png" />
+				<h2>Workbench Level 3</h2>
 				<br />
-				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" />
-				<p  class="text">x 300</p>
+				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x ???</p>
 			</div>
 			<ul>
-				<li class="list-item" ng-repeat="bp in books | orderBy:'name'">
-					<input class="checkb" type="checkbox" id="bb{{$index}}" />
-					<label class="checklabel" for="bb{{$index}}">
-						<img ng-src="images/book/{{bp.img}}" />
-						<span>{{bp.name}}</span>
+				<li class="list-item" ng-repeat="blueprint in workbench_level_3 track by $index">
+					 <input class="checkb" type="checkbox" id="blueprint{{$index}}" />
+					<label class="checklabel" for="blueprint{{$index}}">
+						<img style="max-width: 100%;" ng-src="items/{{blueprint.shortname}}.png" />
+						<span>{{blueprint.displayName.english}}</span>
 					</label>
 				</li>
 			</ul>
 		</div>
-
-		<div class="lists" id="library">
-			<div class="section-title">
-				<img class="fragimg" src="images/Blueprint_Library_icon.png" />
-				<h2>Blueprint Library</h2>
-				<br />
-				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" />
-				<p  class="text">x 1200</p>
-			</div>
-			<ul>
-				<li class="list-item" ng-repeat="bp in libs | orderBy:'name'">
-					<input class="checkb" type="checkbox" id="bl{{$index}}" />
-					<label class="checklabel" for="bl{{$index}}">
-						<img ng-src="images/library/{{bp.img}}" />
-						<span>{{bp.name}}</span>
-					</label>
-				</li>
-			</ul>
-		</div>
-
 	</div>
 
 </body>

@@ -18,8 +18,7 @@ def read_rust_item_file(filepath):
 
 		attributes_dict = json.loads(attributes_dict_string)
 
-	return attributes_dict
-	# print(attributes_dict)
+		return attributes_dict
 
 def get_display_name_from_file_lines(lines):
 	reading_lines = False
@@ -40,20 +39,44 @@ def get_display_name_from_file_lines(lines):
 	return display_name
 
 def get_attributes_from_file_lines(lines):
+	def is_line_false(line):
+		if line and "false" in line:
+			return True
+		return False
+
+	def is_line_true(line):
+		if line and "true" in line:
+			return True
+		return False
+
+	short_name = get_short_name_from_file_lines(lines)
 	display_name = get_display_name_from_file_lines(lines)
+	is_researchable = get_is_researchable_from_file_lines(lines)
 	default_blueprint = get_default_blueprint_from_file_lines(lines)
 	workbench_level = get_workbench_level_from_file_lines(lines)
 
-	attributes = None
+	if is_line_false(default_blueprint) and is_line_true(is_researchable):
 
-	if display_name and default_blueprint and workbench_level:
-		attributes = [display_name, default_blueprint, workbench_level]
+		attributes = None
 
-	return attributes
+		if short_name and display_name and workbench_level:
+			attributes = [short_name, display_name, workbench_level]
+
+		return attributes
+
+def get_short_name_from_file_lines(lines):
+	for line in lines:
+		if line.strip().startswith('"shortname"'):
+			return line.strip()
 
 def get_default_blueprint_from_file_lines(lines):
 	for line in lines:
 		if line.strip().startswith('"defaultBlueprint"'):
+			return line.strip()
+
+def get_is_researchable_from_file_lines(lines):
+	for line in lines:
+		if line.strip().startswith('"isResearchable"'):
 			return line.strip()
 
 def get_workbench_level_from_file_lines(lines):
