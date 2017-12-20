@@ -1,0 +1,119 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": 865679437,
+    "shortname": "fish.troutsmall",
+    "displayName": {
+        "token": "troutsmall",
+        "english": "Small Trout"
+    },
+    "displayDescription": {
+        "token": "troutsmall.desc",
+        "english": "A Small Trout. Good for a few meals."
+    },
+    "iconSprite": {
+        "instanceID": 77376
+    },
+    "category": 7,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 10,
+    "quickDespawn": false,
+    "rarity": 0,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 71706
+    },
+    "inventoryGrabSound": {
+        "instanceID": 71706
+    },
+    "inventoryDropSound": {
+        "instanceID": 148524
+    },
+    "physImpactSoundDef": {
+        "instanceID": 67622
+    },
+    "condition": {
+        "enabled": false,
+        "max": 0.0,
+        "repairable": false,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": ""
+    },
+    "Traits": 24,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemModSwap
+{
+    "actionEffect": {
+        "guid": "b32f86fc382349647b79609a2d6cd7a4"
+    },
+    "becomeItem": [
+        {
+            "itemDef": {
+                "instanceID": 244040
+            },
+            "amount": 5.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 1248728
+            },
+            "amount": 4.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 288514
+            },
+            "amount": 8.0
+        }
+    ],
+    "sendPlayerPickupNotification": true,
+    "sendPlayerDropNotification": true,
+    "xpScale": 0.25
+}
+
+ItemModMenuOption
+{
+    "commandName": "Gut",
+    "actionTarget": {
+        "instanceID": 1248698
+    },
+    "option": {
+        "name": {
+            "token": "Gut",
+            "english": "Gut"
+        },
+        "description": {
+            "token": "Gut_desc",
+            "english": "Prepare the fish for eating"
+        },
+        "icon": {
+            "instanceID": 140636
+        },
+        "order": 0
+    },
+    "isPrimaryOption": false
+}
+

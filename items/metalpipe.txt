@@ -1,0 +1,96 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": -1057402571,
+    "shortname": "metalpipe",
+    "displayName": {
+        "token": "metalpipe.name",
+        "english": "Metal Pipe"
+    },
+    "displayDescription": {
+        "token": "metalpipe.desc",
+        "english": "Metal Pipe."
+    },
+    "iconSprite": {
+        "instanceID": 102308
+    },
+    "category": 13,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 20,
+    "quickDespawn": false,
+    "rarity": 3,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 91738
+    },
+    "inventoryGrabSound": {
+        "instanceID": 91738
+    },
+    "inventoryDropSound": {
+        "instanceID": 43760
+    },
+    "physImpactSoundDef": {
+        "instanceID": 97608
+    },
+    "condition": {
+        "enabled": false,
+        "max": 0.0,
+        "repairable": false,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": "6061b9eeaffd06143a23de6f59484f86"
+    },
+    "Traits": 8,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemBlueprint
+{
+    "ingredients": [
+        {
+            "itemDef": {
+                "instanceID": 288350
+            },
+            "amount": 2.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 287418
+            },
+            "amount": 20.0
+        }
+    ],
+    "defaultBlueprint": false,
+    "userCraftable": true,
+    "isResearchable": true,
+    "rarity": 0,
+    "workbenchLevelRequired": 3,
+    "scrapRequired": 20,
+    "scrapFromRecycle": 5,
+    "NeedsSteamItem": false,
+    "blueprintStackSize": -1,
+    "time": 1.0,
+    "amountToCreate": 1,
+    "UnlockAchievment": ""
+}
+

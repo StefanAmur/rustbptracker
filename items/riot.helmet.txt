@@ -1,0 +1,115 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": 340009023,
+    "shortname": "riot.helmet",
+    "displayName": {
+        "token": "riot.helmet",
+        "english": "Riot Helmet"
+    },
+    "displayDescription": {
+        "token": "riot.helmet.desc",
+        "english": "A makeshift riot Helmet. Great at deflecting melee attacks."
+    },
+    "iconSprite": {
+        "instanceID": 77472
+    },
+    "category": 4,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 1,
+    "quickDespawn": false,
+    "rarity": 2,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 153950
+    },
+    "inventoryGrabSound": {
+        "instanceID": 153950
+    },
+    "inventoryDropSound": {
+        "instanceID": 96032
+    },
+    "physImpactSoundDef": {
+        "instanceID": 115284
+    },
+    "condition": {
+        "enabled": true,
+        "max": 150.0,
+        "repairable": true,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": "8a3e0122e6dcc6647bba0d6cd15231b8"
+    },
+    "Traits": 8,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemModWearable
+{
+    "entityPrefab": {
+        "guid": "b6d8cfa15ba0bff4a952f9d2d6cc0892"
+    },
+    "protectionProperties": {
+        "instanceID": 38242
+    },
+    "armorProperties": {
+        "instanceID": 103130
+    },
+    "movementProperties": {
+        "instanceID": 0
+    },
+    "occlusionType": 64,
+    "blocksAiming": false,
+    "emissive": false
+}
+
+ItemBlueprint
+{
+    "ingredients": [
+        {
+            "itemDef": {
+                "instanceID": 244042
+            },
+            "amount": 10.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 239876
+            },
+            "amount": 50.0
+        }
+    ],
+    "defaultBlueprint": false,
+    "userCraftable": true,
+    "isResearchable": true,
+    "rarity": 3,
+    "workbenchLevelRequired": 1,
+    "scrapRequired": 0,
+    "scrapFromRecycle": 0,
+    "NeedsSteamItem": false,
+    "blueprintStackSize": -1,
+    "time": 60.0,
+    "amountToCreate": 1,
+    "UnlockAchievment": ""
+}
+

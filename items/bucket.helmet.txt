@@ -1,0 +1,115 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": 1260209393,
+    "shortname": "bucket.helmet",
+    "displayName": {
+        "token": "bucket.helmet",
+        "english": "Bucket Helmet"
+    },
+    "displayDescription": {
+        "token": "bucket.helmet.desc",
+        "english": "A Bucket Helmet. It provides a level of regional protection from inflicted damage."
+    },
+    "iconSprite": {
+        "instanceID": 47944
+    },
+    "category": 4,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 1,
+    "quickDespawn": false,
+    "rarity": 2,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 106612
+    },
+    "inventoryGrabSound": {
+        "instanceID": 106612
+    },
+    "inventoryDropSound": {
+        "instanceID": 146534
+    },
+    "physImpactSoundDef": {
+        "instanceID": 40826
+    },
+    "condition": {
+        "enabled": true,
+        "max": 200.0,
+        "repairable": true,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": "be0c38f7b4919514e80b8a7a84960df7"
+    },
+    "Traits": 8,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemModWearable
+{
+    "entityPrefab": {
+        "guid": "42f2e788555f400459a2ee977c752ac6"
+    },
+    "protectionProperties": {
+        "instanceID": 113506
+    },
+    "armorProperties": {
+        "instanceID": 103130
+    },
+    "movementProperties": {
+        "instanceID": 0
+    },
+    "occlusionType": 64,
+    "blocksAiming": false,
+    "emissive": false
+}
+
+ItemBlueprint
+{
+    "ingredients": [
+        {
+            "itemDef": {
+                "instanceID": 244042
+            },
+            "amount": 20.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 239876
+            },
+            "amount": 40.0
+        }
+    ],
+    "defaultBlueprint": false,
+    "userCraftable": true,
+    "isResearchable": true,
+    "rarity": 2,
+    "workbenchLevelRequired": 1,
+    "scrapRequired": 0,
+    "scrapFromRecycle": 0,
+    "NeedsSteamItem": false,
+    "blueprintStackSize": -1,
+    "time": 60.0,
+    "amountToCreate": 1,
+    "UnlockAchievment": ""
+}
+

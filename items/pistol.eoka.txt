@@ -1,0 +1,104 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": -1379225193,
+    "shortname": "pistol.eoka",
+    "displayName": {
+        "token": "pistol.eoka",
+        "english": "Eoka Pistol"
+    },
+    "displayDescription": {
+        "token": "pistol.eoka.desc",
+        "english": "A very basic Pistol that fires one Pistol Round at a time."
+    },
+    "iconSprite": {
+        "instanceID": 135034
+    },
+    "category": 0,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 1,
+    "quickDespawn": false,
+    "rarity": 1,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 150144
+    },
+    "inventoryGrabSound": {
+        "instanceID": 150144
+    },
+    "inventoryDropSound": {
+        "instanceID": 162942
+    },
+    "physImpactSoundDef": {
+        "instanceID": 156150
+    },
+    "condition": {
+        "enabled": true,
+        "max": 50.0,
+        "repairable": true,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": "a50dcbc8ac0a92043bbbc4b303c4c1fe"
+    },
+    "Traits": 8,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemModEntity
+{
+    "entityPrefab": {
+        "guid": "15dba6521b56a9c4a96c48a5de92a8ca"
+    },
+    "defaultBone": ""
+}
+
+ItemBlueprint
+{
+    "ingredients": [
+        {
+            "itemDef": {
+                "instanceID": 287774
+            },
+            "amount": 75.0
+        },
+        {
+            "itemDef": {
+                "instanceID": 239876
+            },
+            "amount": 30.0
+        }
+    ],
+    "defaultBlueprint": true,
+    "userCraftable": true,
+    "isResearchable": true,
+    "rarity": 2,
+    "workbenchLevelRequired": 0,
+    "scrapRequired": 0,
+    "scrapFromRecycle": 0,
+    "NeedsSteamItem": false,
+    "blueprintStackSize": -1,
+    "time": 30.0,
+    "amountToCreate": 1,
+    "UnlockAchievment": ""
+}
+

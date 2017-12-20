@@ -1,0 +1,136 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": -991829475,
+    "shortname": "humanmeat.cooked",
+    "displayName": {
+        "token": "humanmeat.cooked",
+        "english": "Cooked Human Meat"
+    },
+    "displayDescription": {
+        "token": "humanmeat.cooked.desc",
+        "english": "Salty meat from a human being, eating this will restore some hunger and health but reduces hydration. Maybe you should look for a better food source."
+    },
+    "iconSprite": {
+        "instanceID": 81462
+    },
+    "category": 7,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 20,
+    "quickDespawn": false,
+    "rarity": 0,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 71706
+    },
+    "inventoryGrabSound": {
+        "instanceID": 71706
+    },
+    "inventoryDropSound": {
+        "instanceID": 148524
+    },
+    "physImpactSoundDef": {
+        "instanceID": 67622
+    },
+    "condition": {
+        "enabled": false,
+        "max": 0.0,
+        "repairable": false,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": "88b28abdae69bd14cbe60a24294db9a7"
+    },
+    "Traits": 56,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemModConsume
+{
+    "consumeEffect": {
+        "guid": "56a163f22f7764c499a621708c47a3be"
+    },
+    "eatGesture": "eat_2hand",
+    "product": []
+}
+
+ItemModConsumable
+{
+    "amountToConsume": 1,
+    "conditionFractionToLose": 0.0,
+    "effects": [
+        {
+            "type": 0,
+            "amount": 30.0,
+            "time": 0.0,
+            "onlyIfHealthLessThan": 1.0
+        },
+        {
+            "type": 1,
+            "amount": -30.0,
+            "time": 0.0,
+            "onlyIfHealthLessThan": 1.0
+        },
+        {
+            "type": 7,
+            "amount": 2.0,
+            "time": 0.0,
+            "onlyIfHealthLessThan": 1.0
+        }
+    ]
+}
+
+ItemModCookable
+{
+    "becomeOnCooked": {
+        "instanceID": 368846
+    },
+    "cookTime": 60.0,
+    "amountOfBecome": 1,
+    "lowTemp": 150,
+    "highTemp": 2000,
+    "setCookingFlag": false
+}
+
+ItemModMenuOption
+{
+    "commandName": "consume",
+    "actionTarget": {
+        "instanceID": 368838
+    },
+    "option": {
+        "name": {
+            "token": "eat",
+            "english": "Eat"
+        },
+        "description": {
+            "token": "eat_desc",
+            "english": "Eat this item."
+        },
+        "icon": {
+            "instanceID": 66700
+        },
+        "order": 0
+    },
+    "isPrimaryOption": true
+}
+

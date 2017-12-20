@@ -1,0 +1,130 @@
+This file is provided for informational purposes only. Changes aren't reflected in game.
+
+ItemDefinition
+{
+    "itemid": 968732481,
+    "shortname": "meat.pork.burned",
+    "displayName": {
+        "token": "meat.pork.burned",
+        "english": "Burnt Pork"
+    },
+    "displayDescription": {
+        "token": "meat.pork.burned.desc",
+        "english": "This little piggy has been in the oven for too long."
+    },
+    "iconSprite": {
+        "instanceID": 140776
+    },
+    "category": 7,
+    "selectionPanel": 0,
+    "maxDraggable": 0,
+    "itemType": 1,
+    "amountType": 0,
+    "occupySlots": 0,
+    "stackable": 20,
+    "quickDespawn": false,
+    "rarity": 0,
+    "spawnAsBlueprint": false,
+    "inventorySelectSound": {
+        "instanceID": 71706
+    },
+    "inventoryGrabSound": {
+        "instanceID": 71706
+    },
+    "inventoryDropSound": {
+        "instanceID": 148524
+    },
+    "physImpactSoundDef": {
+        "instanceID": 67622
+    },
+    "condition": {
+        "enabled": false,
+        "max": 0.0,
+        "repairable": false,
+        "maintainMaxCondition": false,
+        "foundCondition": {
+            "fractionMin": 1.0,
+            "fractionMax": 1.0
+        }
+    },
+    "hidden": false,
+    "flags": 0,
+    "steamItem": {
+        "instanceID": 0
+    },
+    "Parent": {
+        "instanceID": 0
+    },
+    "worldModelPrefab": {
+        "guid": "cfc0427cf715e9a418839dabb5b0925e"
+    },
+    "Traits": 56,
+    "panel": {
+        "instanceID": 0
+    }
+}
+
+ItemModConsume
+{
+    "consumeEffect": {
+        "guid": "56a163f22f7764c499a621708c47a3be"
+    },
+    "eatGesture": "eat_2hand",
+    "product": []
+}
+
+ItemModConsumable
+{
+    "amountToConsume": 1,
+    "conditionFractionToLose": 0.0,
+    "effects": [
+        {
+            "type": 0,
+            "amount": 15.0,
+            "time": 1.0,
+            "onlyIfHealthLessThan": 1.0
+        },
+        {
+            "type": 7,
+            "amount": 1.0,
+            "time": 1.0,
+            "onlyIfHealthLessThan": 1.0
+        }
+    ]
+}
+
+ItemModMenuOption
+{
+    "commandName": "consume",
+    "actionTarget": {
+        "instanceID": 800104
+    },
+    "option": {
+        "name": {
+            "token": "eat",
+            "english": "Eat"
+        },
+        "description": {
+            "token": "eat_desc",
+            "english": "Eat this item."
+        },
+        "icon": {
+            "instanceID": 66700
+        },
+        "order": 0
+    },
+    "isPrimaryOption": true
+}
+
+ItemModCookable
+{
+    "becomeOnCooked": {
+        "instanceID": 240070
+    },
+    "cookTime": 120.0,
+    "amountOfBecome": 1,
+    "lowTemp": 150,
+    "highTemp": 250,
+    "setCookingFlag": true
+}
+
