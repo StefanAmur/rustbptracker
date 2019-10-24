@@ -3,7 +3,7 @@ var bpapp = angular.module('bptrackerApp', []);
 bpapp.controller('bptrackerCtrl', function ($scope, $http) {
 	$scope.loading = true
 	$scope.message = 'Loading Blueprints'
-	$http.get('../items.txt')
+	$http.get('/js/items.txt')
 		.then(function(json_item_object_list) {
 			sort_by_workbench_level(json_item_object_list.data)
 			$scope.loading = false
