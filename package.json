@@ -1,0 +1,19 @@
+{
+  "name": "rustbptracker",
+  "version": "1.0.0",
+  "description": "Rust blueprints tracker",
+  "main": "app.js",
+  "scripts": {
+    "devserver": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanAmur/rustbptracker.git"
+  },
+  "author": "Stefan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StefanAmur/rustbptracker/issues"
+  },
+  "homepage": "https://github.com/StefanAmur/rustbptracker#readme"
+}

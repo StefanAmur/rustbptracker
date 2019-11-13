@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rust Blueprint Tracker</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -11,7 +13,8 @@
 	<script type="text/javascript" src="js/js.js"></script>
 
 	<!-- Angular -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 
 	
 	<script type="text/javascript" src="js/controller.js"></script>
@@ -29,16 +32,16 @@
 
 		<div class="lists" id="workbench_level_1">
 			<div class="section-title">
-				<img class="fragimg" src="images/Blueprint_Fragment_icon.png" />
+				<img class="fragimg" alt="blueprint fragment icon" src="images/Blueprint_Fragment_icon.png" />
 				<h2>Workbench Level 1</h2>
 				<br />
-				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x 75</p>
+				<img class="fragthb" alt="blueprint fragment icon" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x 75</p>
 			</div>
 			<ul>
 				<li class="list-item" ng-repeat="blueprint in workbench_level_1 track by $index">
 					 <input class="checkb" type="checkbox" id="blueprint{{$index}}" />
 					<label class="checklabel" for="blueprint{{$index}}">
-						<img style="max-width: 100%;" ng-src="items/{{blueprint.shortname}}.png" />
+						<img style="max-width: 100%;" alt="{{blueprint.displayName.english}}" ng-src="items/{{blueprint.shortname}}.png" />
 						<span>{{blueprint.displayName.english}}</span>
 					</label>
 				</li>
@@ -47,16 +50,16 @@
 
 		<div class="lists" id="workbench_level_2">
 			<div class="section-title">
-				<img class="fragimg" src="images/Blueprint_Fragment_icon.png" />
+				<img class="fragimg" alt="blueprint fragment icon" src="images/Blueprint_Fragment_icon.png" />
 				<h2>Workbench Level 2</h2>
 				<br />
-				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x ???</p>
+				<img class="fragthb" alt="blueprint fragment icon" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x ???</p>
 			</div>
 			<ul>
 				<li class="list-item" ng-repeat="blueprint in workbench_level_2 track by $index">
 					 <input class="checkb" type="checkbox" id="blueprint{{$index}}" />
 					<label class="checklabel" for="blueprint{{$index}}">
-						<img style="max-width: 100%;" ng-src="items/{{blueprint.shortname}}.png" />
+						<img style="max-width: 100%;" alt="{{blueprint.displayName.english}}" ng-src="items/{{blueprint.shortname}}.png" />
 						<span>{{blueprint.displayName.english}}</span>
 					</label>
 				</li>
@@ -65,16 +68,16 @@
 
 		<div class="lists" id="workbench_level_3">
 			<div class="section-title">
-				<img class="fragimg" src="images/Blueprint_Fragment_icon.png" />
+				<img class="fragimg" alt="blueprint fragment icon" src="images/Blueprint_Fragment_icon.png" />
 				<h2>Workbench Level 3</h2>
 				<br />
-				<img class="fragthb" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x ???</p>
+				<img class="fragthb" alt="blueprint fragment icon" src="images/Blueprint_Fragment_icon.png" /><p  class="text">x ???</p>
 			</div>
 			<ul>
 				<li class="list-item" ng-repeat="blueprint in workbench_level_3 track by $index">
 					 <input class="checkb" type="checkbox" id="blueprint{{$index}}" />
 					<label class="checklabel" for="blueprint{{$index}}">
-						<img style="max-width: 100%;" ng-src="items/{{blueprint.shortname}}.png" />
+						<img style="max-width: 100%;" alt="{{blueprint.displayName.english}}" ng-src="items/{{blueprint.shortname}}.png" />
 						<span>{{blueprint.displayName.english}}</span>
 					</label>
 				</li>
